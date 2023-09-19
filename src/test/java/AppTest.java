@@ -13,4 +13,13 @@ public class AppTest {
         assertEquals("OK", result);
     }
 
+    @Test
+    public void testBadStatus() {
+        App myApp = new App();
+
+        String result = myApp.getBadStatus();
+
+        assertEquals("UNHEALTHY", result);
+    }
+
 }
