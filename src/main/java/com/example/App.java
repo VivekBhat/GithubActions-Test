@@ -27,4 +27,9 @@ public class App {
     public String getStatus() {
         return "OK";
     }
+
+    @GetMapping("/badStatus") // Add this annotation to specify the mapping for /status
+    public String getBadStatus() {
+        return "UNHEALTHY";
+    }
 }
